@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hamburger {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+
+.hamburger::selection {
+    background: transparent;
+}
+
+
+
+.active {
+    background-color: white;
+    color: royalblue;
+    right: 296px;
+    border: 2px solid royalblue;
+    border-radius: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background-color: royalblue;
+    transition: .3s linear;
+}
+
+.sidebarActive {
+    right: 0;
+}
+
+.sidebar ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 50px 0;
+
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 0;
+    line-height: 30px;
+    letter-spacing: 2px;
+
+
+}
